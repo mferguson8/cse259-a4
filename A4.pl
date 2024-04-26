@@ -35,7 +35,8 @@ son_in_law(X, Y) :-
 	parent(Z, Y), 
 	male(X).
 grandchild(X, Y) :-
-	grandmother(Y, X) v grandfather(Y, X).
+	grandmother(Y, X)
+	vgrandfather(Y, X).
 grandmother(X, Y) :-
 	mother(X, Z), 
 	parent(Z, Y).
